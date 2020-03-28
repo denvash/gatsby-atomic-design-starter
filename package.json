@@ -1,6 +1,6 @@
 {
-  "name": "dashboard",
-  "description": "Hkube dashboard",
+  "name": "gatsby-atomic-design-starter",
+  "description": "Opinionated Atomic Design starter featuring Gatsby, Tailwind, Styled-Components & Storybook",
   "version": "1.0.0",
   "author": "Dennis Vash <dennisvash@gmail.com>",
   "license": "MIT",
@@ -13,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kube-HPC/dashboard"
+    "url": "https://github.com/denvash/gatsby-atomic-design-starter"
   },
   "bugs": {
-    "url": "https://github.com/kube-HPC/hkube/issues"
+    "url": "https://github.com/denvash/gatsby-atomic-design-starter/issues"
   },
   "husky": {
     "hooks": {
@@ -43,29 +43,12 @@
     "build-storybook": "yarn build; NODE_PATH=src/ build-storybook --quiet"
   },
   "dependencies": {
-    "@hkube/consts": "^1.0.20",
-    "@reduxjs/toolkit": "^1.3.0",
-    "framer-motion": "^1.10.2",
     "gatsby": "^2.20.6",
-    "humanize-duration": "^3.22.0",
-    "lodash.isequal": "^4.5.0",
-    "lodash.throttle": "^4.1.1",
-    "object.fromentries": "^2.0.2",
     "react": "^16.13.1",
-    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
-    "react-moment": "^0.9.7",
-    "react-redux": "^7.2.0",
-    "react-virtualized-auto-sizer": "^1.0.2",
-    "react-window": "^1.8.5",
-    "react-window-infinite-loader": "^1.0.5",
-    "redux-logger": "^3.0.6",
     "reusable": "^1.0.0",
-    "socket.io-client": "^2.3.0",
-    "styled-components": "^5.0.0",
-    "styled-tools": "^1.7.1",
-    "typeface-rajdhani": "^0.0.72"
+    "styled-components": "^5.0.0"
   },
   "devDependencies": {
     "@dennisvash/eslint-config": "^3.0.0",
@@ -80,19 +63,19 @@
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.0",
-    "eslint-plugin-react-hooks": "^2.5.1",
+    "eslint-plugin-react-hooks": "^3.0.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-manifest": "^2.3.2",
     "gatsby-plugin-offline": "^3.1.1",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-resolve-src": "^2.0.0",
-    "gatsby-plugin-sitemap": "^2.3.1",
     "gatsby-plugin-styled-components": "^3.2.1",
     "husky": "4.2.3",
     "lint-staged": "^10.0.9",
     "prettier": "^2.0.2",
     "pretty-quick": "^2.0.1",
     "prop-types": "^15.7.2",
+    "styled-tools": "^1.7.1",
     "stylelint": "^13.2.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",

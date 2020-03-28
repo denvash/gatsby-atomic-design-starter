@@ -1,4 +1,4 @@
-import { Dashboard, SEO } from '@components';
+import { SEO } from '@components';
 import { GlobalStyle } from '@styles';
 import React from 'react';
 
@@ -6,9 +6,7 @@ const IndexPage = () => (
   <>
     <SEO />
     <GlobalStyle />
-    <main>
-      <Dashboard />
-    </main>
+    Atomic Starter
   </>
 );
 

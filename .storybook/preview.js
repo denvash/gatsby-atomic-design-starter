@@ -1,40 +1,31 @@
 import { addDecorator, addParameters, configure } from '@storybook/react';
 import { create } from '@storybook/theming';
 import React from 'react';
-import { Provider } from 'react-redux';
 import { ReusableProvider } from 'reusable';
+import { GlobalStyle } from 'styles';
 import 'tailwindcss/dist/base.css';
-import 'typeface-rajdhani';
-import {} from '../src/components';
-import { useSocket } from '../src/hooks';
-import createStore from '../src/state/store/createStore';
-import { GlobalStyle } from '../src/styles';
 
 const Container = ({ children }) => {
-  useSocket();
   return children;
 };
 
 addDecorator(S => {
-  const store = createStore();
   return (
-    <Provider store={store}>
-      <ReusableProvider>
-        <GlobalStyle />
-        <Container>
-          <S />
-        </Container>
-      </ReusableProvider>
-    </Provider>
+    <ReusableProvider>
+      <GlobalStyle />
+      <Container>
+        <S />
+      </Container>
+    </ReusableProvider>
   );
 });
 
 const theme = create({
   base: 'light',
   colorPrimary: 'hotpink',
-  brandTitle: 'HKube Dashboard Storybook',
-  brandUrl: 'https://dennisvash.dev',
-  brandImage: `https://user-images.githubusercontent.com/27515937/76857209-e4951480-684c-11ea-8d65-434de9c4aaa8.png`,
+  brandTitle: 'Atomic Starter',
+  brandUrl: 'https://',
+  brandImage: ``,
 });
 
 addParameters({
@@ -42,7 +33,6 @@ addParameters({
     showRoots: true,
     showPanel: false,
     storySort: (a, b) => a[1].id.localeCompare(b[1].id),
-    selectedPanel: `templates-dashboard--default`,
     theme,
   },
 });
