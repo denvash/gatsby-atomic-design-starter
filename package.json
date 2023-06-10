@@ -43,7 +43,7 @@
     "build-storybook": "yarn build; NODE_PATH=src/ build-storybook --quiet"
   },
   "dependencies": {
-    "gatsby": "^2.20.6",
+    "gatsby": "^4.25.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
